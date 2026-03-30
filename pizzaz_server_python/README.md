@@ -40,5 +40,5 @@ Cross-origin requests are allowed so you can drive the server from local tooling
 Use these handlers as a starting point when wiring in real data, authentication, or localization support. The structure demonstrates how to:
 
 1. Register reusable UI resources that load static HTML bundles.
-2. Associate tools with those widgets via `_meta.openai/outputTemplate`.
+2. Associate tools with those widgets via `_meta.ui.resourceUri`.
 3. Ship structured JSON alongside human-readable confirmation text.

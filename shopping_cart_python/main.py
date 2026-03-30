@@ -113,7 +113,7 @@ def _get_or_create_cart(cart_id: str | None) -> str:
 
 def _widget_meta() -> Dict[str, Any]:
     return {
-        "openai/outputTemplate": WIDGET_TEMPLATE_URI,
+        "ui": {"resourceUri": WIDGET_TEMPLATE_URI},
         "openai/toolInvocation/invoking": WIDGET_INVOKING,
         "openai/toolInvocation/invoked": WIDGET_INVOKED,
         "openai/widgetAccessible": True,

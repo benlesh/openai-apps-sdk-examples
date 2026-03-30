@@ -27,6 +27,6 @@ Each tool responds with:
 
 - `content`: a short text confirmation that mirrors the original Pizzaz examples.
 - `structuredContent`: a small JSON payload that echoes the topping argument, demonstrating how to ship data alongside widgets.
-- `_meta.openai/outputTemplate`: metadata that binds the response to the matching Skybridge widget shell.
+- `_meta.ui.resourceUri`: metadata that binds the response to the matching widget resource.
 
 Feel free to extend the handlers with real data sources, authentication, and persistence.

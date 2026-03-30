@@ -7,7 +7,7 @@ It exposes two tools:
 - `kitchen-sink-show`: returns the widget template plus structured content for the initial render.
 - `kitchen-sink-refresh`: lightweight echo tool so the widget can call back via `window.openai.callTool`.
 
-Both tools return `_meta.openai/outputTemplate` pointing to `ui://widget/kitchen-sink-lite.html`.
+Both tools return `_meta.ui.resourceUri` pointing to `ui://widget/kitchen-sink-lite.html`.
 
 ## Prereqs
 

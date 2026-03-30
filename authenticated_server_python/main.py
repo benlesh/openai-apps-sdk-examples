@@ -335,7 +335,7 @@ def _tool_meta(
     security_schemes: List[Dict[str, Any]] | None = None,
 ) -> Dict[str, Any]:
     meta = {
-        "openai/outputTemplate": widget.template_uri,
+        "ui": {"resourceUri": widget.template_uri},
         "openai/toolInvocation/invoking": widget.invoking,
         "openai/toolInvocation/invoked": widget.invoked,
         "openai/widgetAccessible": True,

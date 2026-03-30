@@ -87,7 +87,9 @@ function readWidgetHtml(): string {
 
 function toolDescriptorMeta() {
   return {
-    "openai/outputTemplate": TEMPLATE_URI,
+    ui: {
+      resourceUri: TEMPLATE_URI,
+    },
     "openai/toolInvocation/invoking": "Preparing the kitchen sink widget",
     "openai/toolInvocation/invoked": "Widget rendered",
     "openai/widgetAccessible": true,

@@ -140,7 +140,7 @@ def _resource_description(widget: SolarWidget) -> str:
 
 def _tool_meta(widget: SolarWidget) -> Dict[str, Any]:
     return {
-        "openai/outputTemplate": widget.template_uri,
+        "ui": {"resourceUri": widget.template_uri},
         "openai/toolInvocation/invoking": widget.invoking,
         "openai/toolInvocation/invoked": widget.invoked,
         "openai/widgetAccessible": True,
@@ -288,8 +288,8 @@ async def _call_tool_request(req: types.CallToolRequest) -> types.ServerResult:
 
     widget_resource = _embedded_widget_resource(WIDGET)
     meta: Dict[str, Any] = {
+        "ui": {"resourceUri": WIDGET.template_uri},
         "openai.com/widget": widget_resource.model_dump(mode="json"),
-        "openai/outputTemplate": WIDGET.template_uri,
         "openai/toolInvocation/invoking": WIDGET.invoking,
         "openai/toolInvocation/invoked": WIDGET.invoked,
         "openai/widgetAccessible": True,

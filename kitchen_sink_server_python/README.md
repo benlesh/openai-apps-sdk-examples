@@ -5,7 +5,7 @@ This server pairs with the `src/kitchen-sink-lite` widget in this repo. It expos
 - `kitchen-sink-show`: returns the widget template and structured content for the initial render.
 - `kitchen-sink-refresh`: a lightweight echo tool you can call from the widget with `window.openai.callTool`.
 
-Both tools include `_meta.openai/outputTemplate` pointing to the same widget HTML so the Apps SDK can hydrate the UI.
+Both tools include `_meta.ui.resourceUri` pointing to the same widget HTML so the Apps SDK can hydrate the UI.
 
 ## Prereqs
 

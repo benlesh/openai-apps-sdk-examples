@@ -76,7 +76,9 @@ function readWidgetHtml(componentName: string): string {
 
 function widgetDescriptorMeta(widget: PizzazWidget) {
   return {
-    "openai/outputTemplate": widget.templateUri,
+    ui: {
+      resourceUri: widget.templateUri,
+    },
     "openai/toolInvocation/invoking": widget.invoking,
     "openai/toolInvocation/invoked": widget.invoked,
     "openai/widgetAccessible": true,
